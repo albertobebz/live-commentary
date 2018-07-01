@@ -1,50 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
-import { colors } from "../themes";
+import iconsGenerator from "../utils/iconsGenerator";
+
+import { colors, metrics } from "../themes";
 
 const CommentWrapper = styled.div`
   .minute {
     width: 50px;
     height: 50px;
     min-width: 50px;
-    border-radius: 50%;
-    border: 2px solid ${colors.borderBlue};
+    border-radius: ${metrics.borders.borderRadiusRound}%;
+    border: ${metrics.borders.borderDefault}px solid ${colors.borderBlue};
     background-color: transparent;
   }
 
   &.selected {
     .minute {
-      border: 4px solid ${colors.darkYellow};
+      border: ${metrics.borders.borderThick}px solid ${colors.darkYellow};
     }
   }
 `;
 
 const Comment = ({ select, id, time, eventType, comment }) => {
-  let eventTypeIcon;
-
-  switch (eventType) {
-    case "red":
-      eventTypeIcon = <i className="far fa-bookmark fa-bookmark-red" />;
-      break;
-    case "yellow":
-      eventTypeIcon = <i className="far fa-bookmark fa-bookmark-yellow" />;
-      break;
-    case "comment":
-      eventTypeIcon = <i className="fas fa-align-left" />;
-      break;
-    case "injury":
-      eventTypeIcon = <i className="fas fa-ambulance" />;
-      break;
-    case "goal":
-      eventTypeIcon = <i className="fas fa-basketball-ball" />;
-      break;
-    case "substitution":
-      eventTypeIcon = <i className="fas fa-arrows-alt-v" />;
-      break;
-    default:
-      eventTypeIcon = "";
-  }
+  let icon = iconsGenerator(eventType);
 
   return (
     <CommentWrapper
@@ -56,7 +35,7 @@ const Comment = ({ select, id, time, eventType, comment }) => {
       <span className="minute d-flex justify-content-center align-items-center">
         {`${time}'`}
       </span>
-      <span className="m-2">{eventTypeIcon}</span>
+      <span className="m-2">{icon}</span>
       <p className="text-justify">{comment}</p>
     </CommentWrapper>
   );
