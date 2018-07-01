@@ -1,19 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
+import { colors } from "../themes";
+
 const CommentWrapper = styled.div`
   .minute {
     width: 50px;
     height: 50px;
     min-width: 50px;
     border-radius: 50%;
-    border: 2px solid blue;
-    background-color: #fff;
+    border: 2px solid ${colors.borderBlue};
+    background-color: transparent;
   }
 
   &.selected {
     .minute {
-      border: 2px solid tomato;
+      border: 4px solid ${colors.darkYellow};
     }
   }
 `;

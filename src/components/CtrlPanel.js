@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const PanelCtrlWrapper = styled.div``;
+const PanelCtrlWrapper = styled.div`
+  ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+`;
 
 const CtrlPanel = props => {
   const keyEvent = props.keyEvents
-    .filter(k => k.eventType != "comment")
+    .filter(k => k.eventType !== "comment")
     .map(k => {
       let eventTypeIcon;
 
@@ -37,7 +41,7 @@ const CtrlPanel = props => {
           <a href={`#${k.id}`}>
             <span>{k.time}' - </span>
             <span>{eventTypeIcon}</span>
-            <p className="ml-3 d-none d-md-inline-block">
+            <p className="ml-3 mb-0 d-none d-md-inline-block">
               {k.comment.slice(0, 10)}...
             </p>
           </a>
@@ -47,7 +51,7 @@ const CtrlPanel = props => {
 
   return (
     <PanelCtrlWrapper className="col-3 col-md-4 pt-3 pt-md-0 sticky-top h-100">
-      <h3 className="d-none d-md-block">Select a key event</h3>
+      <h3 className="d-none d-md-block pt-3 pb-3 m-0">Keys event</h3>
       <ul className="d-flex flex-column align-items-md-start">{keyEvent}</ul>
     </PanelCtrlWrapper>
   );

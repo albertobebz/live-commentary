@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
 import CommentsList from "./Components/CommentsList";
-import Monitor from "./Components/DisplayMatchInfo";
+import DisplayMatchInfo from "./Components/DisplayMatchInfo";
 import CtrlPanel from "./Components/CtrlPanel";
 
 import todayDate from "./utils/todayDate";
+import BgEvent from "./assets/images/champion.jpg";
 
 import { colors, metrics } from "./themes";
 import styled, { injectGlobal } from "styled-components";
@@ -25,8 +26,13 @@ injectGlobal`
 		list-style-type: none;
   }
 
-  a:hover {
-    text-decoration: none;
+  a {
+    color: ${colors.white};
+    
+    &:hover {
+      text-decoration: none;
+      color: ${colors.darkYellow};
+    }
   }
   
   i {
@@ -46,7 +52,18 @@ injectGlobal`
   }
 `;
 
-const AppWrapper = styled.div``;
+const AppWrapper = styled.div`
+  .bg-match-event {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(${BgEvent});
+
+    @media (min-width: ${metrics.breakpoints.minMedium}px) {
+      height: 400px;
+    }
+  }
+`;
 
 const data = require("./mock.json");
 
@@ -73,13 +90,12 @@ class App extends Component {
   render() {
     return (
       <AppWrapper>
-        <div>
-          <div className="container">
-            <Monitor
-              gameType="Champions League"
+        <div className="bg-match-event d-flex align-items-center">
+          <div className="container p-4">
+            <DisplayMatchInfo
               date={todayDate}
-              home="AC Milan"
-              away="Manchester United"
+              home="Real Madrid"
+              away="Liverpool FC"
               scoreHome={2}
               scoreAway={1}
             />
