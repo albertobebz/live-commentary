@@ -14,7 +14,8 @@ const breakpoints = {
 
 const borders = {
   // px
-  borderDefault: 6,
+  borderThick: 5,
+  borderDefault: 2,
 
   // %
   borderRadiusRound: 50

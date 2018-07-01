@@ -20,7 +20,7 @@ const CommentsList = props => {
   });
 
   return (
-    <CommentListWrapper className="col-9 col-md-8 pt-3 pb-3">
+    <CommentListWrapper className="col-9 col-md-8 pt-3 pb-5">
       {comment}
     </CommentListWrapper>
   );

@@ -9,7 +9,7 @@ const MonitorWrapper = styled.div`
   }
 
   .date {
-    color: ${colors.darkGrey};
+    color: ${colors.mediumGrey};
     letter-spacing: 4px;
     font-family: "Roboto", sans-serif;
 
@@ -78,7 +78,9 @@ const DisplayMatchInfo = props => {
     <MonitorWrapper className="pb-3">
       <div className="text-center">
         <h1>{props.gameType}</h1>
-        <h3 className="date">{props.date}</h3>
+        <span className="date d-inline-block">
+          <u>{props.date}</u>
+        </span>
       </div>
       <div className="d-flex align-items-center justify-content-center">
         <div className="d-flex align-items-center">

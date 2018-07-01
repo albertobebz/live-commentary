@@ -13,7 +13,7 @@ import styled, { injectGlobal } from "styled-components";
 injectGlobal`
 
   body{
-    color: ${colors.white};
+    color: ${colors.mediumGrey};
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   }
 
@@ -60,7 +60,7 @@ const AppWrapper = styled.div`
     background-image: url(${BgEvent});
 
     @media (min-width: ${metrics.breakpoints.minMedium}px) {
-      height: 400px;
+      height: 500px;
     }
   }
 `;
