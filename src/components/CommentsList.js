@@ -1,12 +1,28 @@
 import React from "react";
-import comment from "./Comment";
+import Comment from "./Comment";
+
+import styled from "styled-components";
+
+const CommentListWrapper = styled.div``;
 
 const CommentsList = props => {
+  const comment = props.comments.map(c => {
+    return (
+      <Comment
+        key={c.id}
+        time={c.time}
+        eventType={c.eventType}
+        comment={c.comment}
+        select={c.select}
+        id={c.id}
+      />
+    );
+  });
+
   return (
-    <div>
-      <p>this wrap the list of single comment</p>
-      <Comment />
-    </div>
+    <CommentListWrapper className="col-9 col-md-8">
+      {comment}
+    </CommentListWrapper>
   );
 };
 
