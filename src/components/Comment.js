@@ -1,7 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-const CommentWrapper = styled.div``;
+const CommentWrapper = styled.div`
+  .minute {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    background-color: #fff;
+  }
+
+  &.selected {
+    .minute {
+      border: 2px solid tomato;
+    }
+  }
+`;
 
 const Comment = ({ select, id, time, eventType, comment }) => {
   let eventTypeIcon;

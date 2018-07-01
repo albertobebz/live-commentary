@@ -3,7 +3,27 @@ import React from "react";
 import { colors } from "../themes";
 import styled from "styled-components";
 
-const MonitorWrapper = styled.div``;
+const MonitorWrapper = styled.div`
+  .milan-img {
+    width: 90px;
+    height: auto;
+  }
+
+  .manu-img {
+    width: 140px;
+    height: auto;
+  }
+
+  .score {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: ${colors.white};
+    background-color: ${colors.darkGrey};
+  }
+`;
 
 const DisplayMatchInfo = props => {
   return (
