@@ -4,16 +4,16 @@ import CommentsList from "./Components/CommentsList";
 import Monitor from "./Components/DisplayMatchInfo";
 import CtrlPanel from "./Components/CtrlPanel";
 
+import todayDate from "./utils/todayDate";
+
 import { colors, metrics } from "./themes";
 import styled, { injectGlobal } from "styled-components";
 
 injectGlobal`
 
   body{
-    color: ${colors.grey}
-    font-family: 'Encode Sans Condensed', sans-serif;
-    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+    color: ${colors.white};
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   }
 
 	ul {
@@ -46,13 +46,7 @@ injectGlobal`
   }
 `;
 
-const Test = styled.div`
-  background: linear-gradient(
-    to bottom,
-    #88bfe8 0%,
-    #1a8edb 41%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-`;
+const AppWrapper = styled.div``;
 
 const data = require("./mock.json");
 
@@ -77,23 +71,21 @@ class App extends Component {
   };
 
   render() {
-    const date = new Date();
-    const day = date.getUTCDate();
-    const month = date.getUTCMonth() + 1;
-    const year = date.getUTCFullYear();
-    const displayDate = `${day}/${month}/${year}`;
-
     return (
-      <Test>
+      <AppWrapper>
+        <div>
+          <div className="container">
+            <Monitor
+              gameType="Champions League"
+              date={todayDate}
+              home="AC Milan"
+              away="Manchester United"
+              scoreHome={2}
+              scoreAway={1}
+            />
+          </div>
+        </div>
         <div className="container">
-          <Monitor
-            gameType="Champions League"
-            date={displayDate}
-            home="AC Milan"
-            scoreHome={1}
-            scoreAway={1}
-            away="Manchester United"
-          />
           <div className="row">
             <CommentsList comments={this.state.comments} />
             <CtrlPanel
@@ -102,7 +94,7 @@ class App extends Component {
             />
           </div>
         </div>
-      </Test>
+      </AppWrapper>
     );
   }
 }
