@@ -1,0 +1,129 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "time": 90,
+      "eventType": "red",
+      "comment":
+        "CARRICK OFF! All happening here, as Evra fouls Ronaldinho, and Carrick picks up a second yellow card. He must've kicked the ball away or something. Bizarre end to a topsy-turvy game."
+    },
+    {
+      "id": 2,
+      "time": 85,
+      "eventType": "goal",
+      "comment":
+        "GOAL SEEDORF! From nowhere a glimmer of hope for Milan heading to Old Trafford. Thiago Silva's clever pass finds Ronaldinho who jinks into the penalty area and squares the ball for Seedorf, who niftily back-flicks the ball home from six yards. United have been supremely comfortable for the last 20 minutes, but that is a wonderful goal from Milan."
+    },
+    {
+      "id": 3,
+      "time": 80,
+      "eventType": "substitution",
+      "comment":
+        "Huntelaar is replaced by Inzaghi as Milan desperately try to haul themselves back into this tie."
+    },
+    {
+      "id": 4,
+      "time": 75,
+      "eventType": "substitution",
+      "comment":
+        "Beckham's night is over as he's the man to make way for Seedorf. Decent shift from Becks, playing a key role in the first goal and offering plenty of threat from the set-piece situations."
+    },
+    {
+      "id": 5,
+      "time": 70,
+      "eventType": "goal",
+      "comment":
+        "GOAL ROONEY! The substitution reaps instant dividends. This time it's Milan guilty of giving the ball away cheaply as Thiago Silva's clearance finds Scholes. He spreads the ball to Valencia on the right. He stands the ball up to the back post and Rooney climbs highest to head the ball back where it came from, over Dida and inside the post. Great header, great goal and United now in a fabulous position."
+    },
+    {
+      "id": 6,
+      "time": 65,
+      "eventType": "yellow",
+      "comment":
+        "Rooney gets himself a booking, apparently for speaking out of turn to the Portuguese referee."
+    },
+    {
+      "id": 7,
+      "time": 60,
+      "eventType": "comment",
+      "comment":
+        "Another glimpse of Ronaldinho magic as he jinks past two challenges before fizzing a shot from the edge of the area. Wicked dip and bend on the ball, which bounces in front of the keeper and van der Sar can only parry. Rafael completes the clearance."
+    },
+    {
+      "id": 8,
+      "time": 55,
+      "eventType": "substitution",
+      "comment":
+        "Antonini has picked up an injury - hamstring by the look of it - and is replaced by Favalli."
+    },
+    {
+      "id": 9,
+      "time": 50,
+      "eventType": "comment",
+      "comment":
+        "Good crossing chance for Nani on the right, but he sends it far too close to the keeper. Dida, this time, catches safely."
+    },
+    {
+      "id": 10,
+      "time": 45,
+      "eventType": "injury",
+      "comment":
+        "Clash of heads between Nani and Ronaldinho, but only a glancing blow. Doesn't appear to be any serious damage."
+    },
+    {
+      "id": 11,
+      "time": 40,
+      "eventType": "comment",
+      "comment":
+        "Better from United. Fletcher and Evra work the ball nicely on the left before the ball is squared to Scholes. It's just about within his shooting range, but he slices well wide as Beckham closes his old mate down."
+    },
+    {
+      "id": 12,
+      "time": 35,
+      "eventType": "comment",
+      "comment":
+        "United being carved apart here. Far too easy for Milan as Pato works the ball to Ronaldinho. He cuts back on to his right foot and bends a shot goalwards, but it's too close to van der Sar whose handling is assured."
+    },
+    {
+      "id": 13,
+      "time": 30,
+      "eventType": "comment",
+      "comment":
+        "United starting to come into the game now, and Nani puts in another cross from the right. Better delivery this time, curling the ball into a dangerous area, but no-one attacks the ball which bounces behind for a goal-kick."
+    },
+    {
+      "id": 14,
+      "time": 25,
+      "eventType": "comment",
+      "comment":
+        "lAll Milan in the early stages, with Ronaldinho rolling back the years. Another outrageous flick delights the crowd and allows Antonini to whip in a cross that United scramble clear."
+    },
+    {
+      "id": 15,
+      "time": 20,
+      "eventType": "goal",
+      "comment":
+        "GOAL - RONALDINHO! Milan lead inside three minutes. Beckham's free-kick is only half-cleared by Evra and the ball falls to Ronaldinho on the left edge of the area. His first-time shot lacks power but takes a wrong-footing deflection off Carrick's shin and spins into the back of the net."
+    },
+    {
+      "id": 16,
+      "time": 15,
+      "eventType": "comment",
+      "comment":
+        "Pato's quick feet too good for Evra, who chops his man down and is perhaps lucky to escape with just a talking to. Free-kick out on the right, you-know-who to swing it into the box."
+    },
+    {
+      "id": 17,
+      "time": 10,
+      "eventType": "comment",
+      "comment":
+        "Early possession for the hosts in midfield, with a couple of Ronaldinho lollipops getting the crowd going."
+    },
+    {
+      "id": 18,
+      "time": 5,
+      "eventType": "comment",
+      "comment": "We're under way at the San Siro."
+    }
+  ]
+}
