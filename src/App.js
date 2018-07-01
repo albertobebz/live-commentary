@@ -7,13 +7,14 @@ import CtrlPanel from "./Components/CtrlPanel";
 import todayDate from "./utils/todayDate";
 import BgEvent from "./assets/images/champion.jpg";
 
-import { colors, metrics } from "./themes";
+import { colors, fonts, metrics } from "./themes";
 import styled, { injectGlobal } from "styled-components";
 
 injectGlobal`
 
   body{
     color: ${colors.mediumGrey};
+    font-size: ${fonts.fontSize.default}px;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   }
 
@@ -36,10 +37,10 @@ injectGlobal`
   }
   
   i {
-    font-size: 20px;
+    font-size: ${fonts.fontSize.default}px;
 
     @media (min-width: ${metrics.breakpoints.minMedium}){
-      font-size: 25px;
+      font-size: ${fonts.fontSize.large}px;
     }
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { colors, metrics } from "../themes";
+import { colors, fonts, metrics } from "../themes";
 import styled from "styled-components";
 
 const MonitorWrapper = styled.div`
@@ -14,7 +14,7 @@ const MonitorWrapper = styled.div`
     font-family: "Roboto", sans-serif;
 
     @media (min-width: ${metrics.breakpoints.minMedium}px) {
-      font-size: 27px;
+      font-size: ${fonts.fontSize.xlarge}px;
     }
   }
 
@@ -24,7 +24,7 @@ const MonitorWrapper = styled.div`
     font-style: italic;
 
     @media (min-width: ${metrics.breakpoints.minMedium}px) {
-      font-size: 20px;
+      font-size: ${fonts.fontSize.default}px;
     }
   }
 
@@ -61,10 +61,10 @@ const MonitorWrapper = styled.div`
 
   .score,
   .score-divider {
-    font-size: 20px;
+    font-size: ${fonts.fontSize.dafault}px;
 
     @media (min-width: ${metrics.breakpoints.minMedium}px) {
-      font-size: 70px;
+      font-size: ${fonts.fontSize.xxlarge}px;
     }
   }
 
